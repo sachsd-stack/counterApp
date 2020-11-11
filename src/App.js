@@ -20,7 +20,7 @@ class App extends Component {
     });
   }
 
-  reset(){
+  reset = () =>{
     this.setState({
       count: 0
     });
