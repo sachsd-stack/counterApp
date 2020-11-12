@@ -26,9 +26,9 @@ class App extends Component {
     });
   }
 
-  customArithmetic = (e) => {
+  customArithmetic = (number) => {
     this.setState({
-        count: this.state.count + parseInt(e)
+        count: this.state.count + parseInt(number, 10)
     });
 }
 
