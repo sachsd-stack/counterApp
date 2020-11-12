@@ -18,12 +18,14 @@ class Custom extends Component {
             count: ''
         });
     }
+
+    
     render() {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <input type="number" className="center calculate" onChange={this.customArithmetic} placeholder="Input a number to add or subtract"/>
-                    <button type="submit">Submit</button>
+                    <div><button type="submit">Submit</button></div>
                 </form>
             </div>
         )

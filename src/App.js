@@ -39,7 +39,9 @@ class App extends Component {
         <div className="center">
           <Increment increment={this.increment}/>
           <Decrement decrement={this.decrement}/>
-          <button className='reset' onClick={this.reset}>Reset</button>
+          <div>
+            <button className='reset' onClick={this.reset}>Reset</button>
+          </div>
         </div>
         <div className="center">
           <Custom customArithmetic={this.customArithmetic}/>
