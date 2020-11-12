@@ -24,8 +24,17 @@ button {
   color:white;
 }
 
-.calculate {
+button.plusOne {
+  width:7.5%;
+}
+
+button.minusOne {
+  width:7.5%;
+}
+
+input {
   width:50% !important;
+  background-color:darkcyan !important;
 }
 
 .App {
