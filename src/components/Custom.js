@@ -12,6 +12,7 @@ class Custom extends Component {
     }
     
       handleSubmit = (e) => {
+          console.log(this.props)
         e.preventDefault();
         this.props.custom(this.state.count)
         this.setState({
