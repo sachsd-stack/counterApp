@@ -13,7 +13,7 @@ class Custom extends Component {
     
       handleSubmit = (e) => {
         e.preventDefault();
-        this.props.customArithmetic(this.state.count)
+        this.props.custom(this.state.count)
         this.setState({
             count: ''
         });
@@ -24,8 +24,8 @@ class Custom extends Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <input type="number" className="center calculate" onChange={this.customArithmetic} placeholder="Input a number to add or subtract"/>
-                    <div><button type="submit">Submit</button></div>
+                    <input type="text" className="center calculate" onChange={this.handleChange} value={this.state.count} placeholder="Input a number to add or subtract"/>
+                    <div><button>Submit</button></div>
                 </form>
             </div>
         )

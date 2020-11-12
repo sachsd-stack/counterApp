@@ -26,9 +26,10 @@ class App extends Component {
     });
   }
 
-  customArithmetic = (number) => {
+  custom = (number) => {
+    let value = parseInt(number)
     this.setState({
-        count: this.state.count + parseInt(number, 10)
+        count:this.state.count + value
     });
 }
 
@@ -44,7 +45,7 @@ class App extends Component {
           </div>
         </div>
         <div className="center">
-          <Custom customArithmetic={this.customArithmetic}/>
+          <Custom custom={this.custom}/>
         </div>
       </div>
     );
